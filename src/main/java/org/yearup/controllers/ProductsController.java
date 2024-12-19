@@ -81,7 +81,8 @@ public class ProductsController
     {
         try
         {
-            productDao.create(product);
+            // productDao.create(product); This bug is creating a new product instead of editing the current product
+            productDao.update(id,product);
         }
         catch(Exception ex)
         {
