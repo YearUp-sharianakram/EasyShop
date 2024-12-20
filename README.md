@@ -28,3 +28,14 @@ Users reported product duplication issues, where the same product appeared multi
 ![Screenshot4](https://github.com/YearUp-sharianakram/EasyShop/blob/main/ScreenshotsForC3/img4.png)
 
 The CategoriesController uses the @RequestMapping("/categories") annotation at the class level to simplify endpoint definitions. This eliminates the need to explicitly include the /categories prefix in each method's mapping. For example, instead of defining @GetMapping("/categories"), the method can simply use @GetMapping. This approach reduces redundancy, improves code readability, and ensures consistent endpoint structure for the controller.
+
+## New Feature - Phase 4 Complete
+
+The ProfileController is responsible for handling user profiles in the application. When a user registers for an account, a corresponding profile record is created in the profiles table. This controller includes two primary methods: a GET method to retrieve the user's profile and a PUT method to update the profile. The ProfileDao interface and its implementation, MySqlProfileDao, manage database operations, including fetching a profile by user ID and updating profile details. To implement this feature, the DAO must include methods getByUserId and update to support the controller's functionality. This setup ensures that users can seamlessly view and modify their profiles via the provided API endpoints.
+
+
+
+
+
+
+
